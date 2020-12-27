@@ -9,6 +9,7 @@ import pickle
 
 # Some global variables and basic hyperparameter information are defined here
 Save_Path = "./Output"     # Path to save picture which is after detected
+# Path="./att_faces"
 
 """
 A Python class that implements the Eigenfaces algorithm
@@ -28,7 +29,7 @@ Algorithm Reference:
     http://docs.opencv.org/modules/contrib/doc/facerec/facerec_tutorial.html
 """
 class Eigenfaces(object):
-    faces_count = 40
+    faces_count = 41
     faces_dir = '.'                                                         # directory path to the AT&T faces
     train_faces_count = 5                                                   # number of faces used for training
     test_faces_count = 5                                                    # number of faces used for testing
@@ -39,7 +40,7 @@ class Eigenfaces(object):
     """
     Initializing the Eigenfaces model.
     """
-    def __init__(self, _faces_dir = '.', _energy = 0.85,_model='trainModel'):
+    def __init__(self, _faces_dir = '.', _energy = 0.85,_model='trainModel',isShow=False):
         print ('> Initializing started')
         self.faces_dir = _faces_dir
         self.energy = _energy
@@ -72,15 +73,15 @@ class Eigenfaces(object):
         self.evalues = self.evalues[sort_indices]           # puttin the evalues in that order
         self.evectors = self.evectors[:,sort_indices]       # same for the evectors
         evalues_sum = sum(self.evalues[:])                  # include only the first k evectors/values so
-        evalues_count = 0                                   # that they include approx. 85% of the energy
+        self.evalues_count = 0                                   # that they include approx. 85% of the energy
         evalues_energy = 0.0
         for evalue in self.evalues:
-            evalues_count += 1
+            self.evalues_count += 1
             evalues_energy += evalue / evalues_sum
             if evalues_energy >= self.energy:
                 break
-        self.evalues = self.evalues[0:evalues_count]     # reduce the number of eigenvectors/values to consider
-        self.evectors = self.evectors[:,0:evalues_count]
+        self.evalues = self.evalues[0:self.evalues_count]# reduce the number of eigenvectors/values to consider
+        self.evectors = self.evectors[:,0:self.evalues_count]
         #self.evectors = self.evectors.transpose()      # change eigenvectors from rows to columns (Should not transpose)
         self.evectors = L * self.evectors               # left multiply to get the correct evectors
         path=os.path.join(Save_Path,str(int(100*self.energy)))
@@ -89,12 +90,15 @@ class Eigenfaces(object):
         for i in range(self.evectors.shape[1]):
             cv2.imwrite(path+"/Eigenface%s.jpg"%(i+1),self.evectors[:,i].reshape(self.n,self.m))
         image=[]
-        for i in range(10):
-            image.append(plt.imread(path+"/Eigenface%s.jpg"%(i+1)))
-            plt.subplot(2, 5, i+1)
-            plt.imshow(image[i],cmap='Greys_r')        #
-        plt.show()
-        #################################################################################################
+        if isShow:
+            try:
+                for i in range(10):
+                    image.append(plt.imread(path+"/Eigenface%s.jpg"%(i+1)))
+                    plt.subplot(2, 5, i+1)
+                    plt.imshow(image[i],cmap='Greys_r')        #
+                plt.show()
+            except:
+                pass
         norms = np.linalg.norm(self.evectors, axis=0)         # find the norm of each eigenvector
         self.evectors = self.evectors / norms                 # normalize all eigenvectors
         self.W = self.evectors.transpose() * L                # computing the weights
@@ -106,29 +110,10 @@ class Eigenfaces(object):
         file_out=open(self.model,"wb")
         pickle.dump(self,file_out,0)
         file_out.close()
-        # del DV_Data
-        # file_in = file( "test.dat" )
-        # DV_Data = pickle.load( file_in )
-        # file_in.close()
-        #  
-        # print DV_Data.c_int
-    """
-    Read data from the file
-    """
-    def read(self):
-        file_out=open(self.model,"rb")
-        aa=pickle.load(file_out)
-        file_out.close()
-        # del DV_Data
-        # file_in = file( "test.dat" )
-        # DV_Data = pickle.load( file_in )
-        # file_in.close()
-        #  
-        # print DV_Data.c_int
     """
     Classify an image to one of the eigenfaces.
     """
-    def classify(self, path_to_img):
+    def classify(self, path_to_img,isShow=False):
         img = cv2.imread(path_to_img, 0)                                        # read as a grayscale image
         img_col = np.array(img, dtype='float64').flatten()                      # flatten the image
         img_col -= self.mean_img_col                                            # subract the mean column
@@ -138,7 +123,20 @@ class Eigenfaces(object):
         diff = self.W - S                                                       # finding the min ||W_j - S||
         norms = np.linalg.norm(diff, axis=0)
         closest_face_id = np.argmin(norms)               # the id [0..240) of the minerror face to the sample
-        return int(closest_face_id / self.train_faces_count) + 1                   # return the faceid (1..40)
+        matchID=int(closest_face_id / self.train_faces_count) + 1
+        if isShow:
+            closest_face = os.path.join(self.faces_dir,
+                                       's' + str(matchID), str(self.training_ids[matchID-1][closest_face_id-(matchID-1)*self.train_faces_count]) + '.pgm')  # relative path
+            closest_face_img = cv2.imread(closest_face, 0)  # read a grayscale image
+            closest_face_img_resize=cv2.resize(closest_face_img, (5 * img.shape[1], 5 * img.shape[0]))
+            cv2.imshow('ClosestFaceID:%s' % str(closest_face_id+1), closest_face_img_resize)
+            imgResize = cv2.resize(img, (5 * img.shape[1], 5 * img.shape[0]))
+            cv2.putText(imgResize, 'Match:%s' % matchID, (30, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 255), 2)
+            cv2.imshow('Match:%s' % matchID, imgResize)
+            cv2.waitKey()
+            print("Match ID:%s" % matchID)
+            print("Closest Face ID:%s" % str(closest_face_id+1))
+        return matchID,closest_face_id                   # return the faceid (1..40)
     """
     Evaluate the model using the 4 test faces left
     from every different face in the AT&T set.
@@ -154,7 +152,7 @@ class Eigenfaces(object):
                 if (test_id in self.training_ids[face_id-1]) == False:          # we skip the image if it is part of the training set
                     path_to_img = os.path.join(self.faces_dir,
                             's' + str(face_id), str(test_id) + '.pgm')          # relative path
-                    result_id = self.classify(path_to_img)
+                    result_id,_ = self.classify(path_to_img)
                     result = (result_id == face_id)
                     if result == True:
                         test_correct += 1
@@ -168,3 +166,9 @@ class Eigenfaces(object):
         print ('Correct: ' + str(self.accuracy) + '%')
         f.write('Correct: %.2f\n' % (self.accuracy))
         f.close()                                                               # closing the file
+
+def readInModel(model):
+    file_out = open(model, "rb")
+    modelIn = pickle.load(file_out)
+    file_out.close()
+    return modelIn
