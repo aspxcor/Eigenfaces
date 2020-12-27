@@ -1,31 +1,34 @@
 from Eigenfaces import *
 from scipy.interpolate import make_interp_spline
 
+# Some global variables and basic hyperparameter information are defined here
 Path="./att_faces"
-"""
-Iteratively setting different energy threshold to be used for the Eigenfaces
-and recording the accuracy in a data text file
-"""
-if __name__ == '__main__':
-    energy_values = range(0,101)
-    f = open('energy_PCs_Accuracy.dat', 'w')
-    evalues_count=[]
-    accuracy=[]
-    for energy_value in energy_values:
-        print('> Evaluating Energy:%s%%'%energy_value)
-        efaces = Eigenfaces(Path, float(energy_value / 100.0))
-        efaces.evaluate()
-        f.write('%d %d %.6lf\n' % (energy_value, efaces.evalues_count, efaces.accuracy))
-        if len(evalues_count) and evalues_count[len(evalues_count)-1]==efaces.evalues_count:
-            accuracy[len(evalues_count)-1]=max(efaces.accuracy,accuracy[len(evalues_count)-1])
-        else:
-            evalues_count.append(efaces.evalues_count)
-            accuracy.append(efaces.accuracy)
-    evalues_count_smooth = np.linspace(np.array(evalues_count).min(), np.array(evalues_count).max(), 1000)
-    accuracy_smooth = make_interp_spline(np.array(evalues_count), np.array(accuracy))(evalues_count_smooth)
 
-    plt.plot(evalues_count_smooth, accuracy_smooth)
-    plt.scatter(evalues_count, accuracy, marker='o')
+# [Function name] changePCs
+# [Function Usage] This function is used to test and plot the change in recognition accuracy as the number of PCs increases
+# [Parameter] None
+# [Return value] None
+# [Developer and date] Zhi DING 2020/12/28
+# [Change Record] None
+if __name__ == '__main__':
+    energyValues = range(0,101)
+    f = open('energyPCsAccuracy.dat', 'w')
+    evaluesCount=[]
+    accuracy=[]
+    for energyValue in energyValues:
+        print('> Evaluating Energy:%s%%'%energyValue)
+        efaces = Eigenfaces(Path, float(energyValue / 100.0))
+        efaces.evaluate()
+        f.write('%d %d %.6lf\n' % (energyValue, efaces.evaluesCount, efaces.accuracy))
+        if len(evaluesCount) and evaluesCount[len(evaluesCount)-1]==efaces.evaluesCount:
+            accuracy[len(evaluesCount)-1]=max(efaces.accuracy,accuracy[len(evaluesCount)-1])
+        else:
+            evaluesCount.append(efaces.evaluesCount)
+            accuracy.append(efaces.accuracy)
+    evaluesCountSmooth = np.linspace(np.array(evaluesCount).min(), np.array(evaluesCount).max(), 1000)
+    accuracySmooth = make_interp_spline(np.array(evaluesCount), np.array(accuracy))(evaluesCountSmooth)
+    plt.plot(evaluesCountSmooth, accuracySmooth)
+    plt.scatter(evaluesCount, accuracy, marker='o')
     plt.xlabel('Number Of PCs')
     plt.ylabel('Rank-1 Rate/%')
     plt.xlim((0,205))
@@ -33,5 +36,4 @@ if __name__ == '__main__':
     plt.xticks(np.arange(0,206,20))
     plt.yticks(np.arange(0,101,10))
     plt.show()
-
     f.close()
