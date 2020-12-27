@@ -5,7 +5,8 @@ import shutil
 import random
 import numpy as np
 import matplotlib.pyplot as plt
-import pickle
+import matplotlib.image as pli
+
 
 # Some global variables and basic hyperparameter information are defined here
 Save_Path = "./Output"     # Path to save picture which is after detected
@@ -39,11 +40,10 @@ class Eigenfaces(object):
     """
     Initializing the Eigenfaces model.
     """
-    def __init__(self, _faces_dir = '.', _energy = 0.85,_model='trainModel'):
+    def __init__(self, _faces_dir = '.', _energy = 0.85):
         print ('> Initializing started')
         self.faces_dir = _faces_dir
         self.energy = _energy
-        self.model=_model
         self.training_ids = []                                          # train image id's for every at&t face
         L = np.empty(shape=(self.mn, self.l), dtype='float64')      # each row of L represents one train image
         cur_img = 0
@@ -88,43 +88,17 @@ class Eigenfaces(object):
             os.makedirs(path)
         for i in range(self.evectors.shape[1]):
             cv2.imwrite(path+"/Eigenface%s.jpg"%(i+1),self.evectors[:,i].reshape(self.n,self.m))
-        image=[]
-        for i in range(10):
-            image.append(plt.imread(path+"/Eigenface%s.jpg"%(i+1)))
-            plt.subplot(2, 5, i+1)
-            plt.imshow(image[i],cmap='Greys_r')        #
-        plt.show()
+        # image=[]
+        # for i in range(20):
+        #     image.append(plt.imread(path+"/Eigenface%s.jpg"%(i+1)))
+        #     plt.subplot(4, 5, i+1)
+        #     plt.imshow(image[i],cmap='Greys_r')        #
+        # plt.show()
         #################################################################################################
         norms = np.linalg.norm(self.evectors, axis=0)         # find the norm of each eigenvector
         self.evectors = self.evectors / norms                 # normalize all eigenvectors
         self.W = self.evectors.transpose() * L                # computing the weights
         print ('> Initializing ended')
-    """
-    Write data into the file
-    """
-    def write(self):
-        file_out=open(self.model,"wb")
-        pickle.dump(self,file_out,0)
-        file_out.close()
-        # del DV_Data
-        # file_in = file( "test.dat" )
-        # DV_Data = pickle.load( file_in )
-        # file_in.close()
-        #  
-        # print DV_Data.c_int
-    """
-    Read data from the file
-    """
-    def read(self):
-        file_out=open(self.model,"rb")
-        aa=pickle.load(file_out)
-        file_out.close()
-        # del DV_Data
-        # file_in = file( "test.dat" )
-        # DV_Data = pickle.load( file_in )
-        # file_in.close()
-        #  
-        # print DV_Data.c_int
     """
     Classify an image to one of the eigenfaces.
     """
@@ -168,3 +142,51 @@ class Eigenfaces(object):
         print ('Correct: ' + str(self.accuracy) + '%')
         f.write('Correct: %.2f\n' % (self.accuracy))
         f.close()                                                               # closing the file
+    """
+    Evaluate the model for the small celebrity data set.
+    Returning the top 5 matches within the AT&T set.
+    Images should have the same size (92,112) and are
+    located in the celebrity_dir folder.
+    """
+    def evaluate_celebrities(self, celebrity_dir='.'):
+        print ('> Evaluating celebrity matches started')
+        for img_name in os.listdir(celebrity_dir):      # go through all the celebrity images in the folder
+            path_to_img = os.path.join(celebrity_dir, img_name)
+            img = cv2.imread(path_to_img, 0)                                    # read as a grayscale image
+            img_col = np.array(img, dtype='float64').flatten()                  # flatten the image
+            img_col -= self.mean_img_col                                        # subract the mean column
+            img_col = np.reshape(img_col, (self.mn, 1))                         # from row vector to col vector
+            S = self.evectors.transpose() * img_col                  # projecting the normalized probe onto the
+                                                                     # Eigenspace, to find out the weights
+            diff = self.W - S                                                   # finding the min ||W_j - S||
+            norms = np.linalg.norm(diff, axis=0)
+            top5_ids = np.argpartition(norms, 5)[:5]# first five elements: indices of top 5 matches in AT&T set
+            name_noext = os.path.splitext(img_name)[0]                # the image file name without extension
+            result_dir = os.path.join('results', name_noext)      # path to the respective results folder
+            os.makedirs(result_dir)                    # make a results folder for the respective celebrity
+            result_file = os.path.join(result_dir, 'results.txt') # the file with the similarity value and id's
+            f = open(result_file, 'w')                            # open the results file for writing
+            for top_id in top5_ids:
+                face_id = (top_id / self.train_faces_count) + 1     # getting the face_id of one of the closest matches
+                subface_id = self.training_ids[face_id-1][top_id % self.train_faces_count]           # getting the exact subimage from the face
+                path_to_img = os.path.join(self.faces_dir,
+                        's' + str(face_id), str(subface_id) + '.pgm')       # relative path to the top5 face
+                shutil.copyfile(path_to_img,                                    # copy the top face from source
+                        os.path.join(result_dir, str(top_id) + '.pgm'))         # to destination
+                f.write('id: %3d, score: %.6f\n' % (top_id, norms[top_id]))     # write the id and its score to the results file
+            f.close()                                                           # close the results file
+        print ('> Evaluating celebrity matches ended')
+if __name__ == "__main__":
+    if len(sys.argv) < 2 or len(sys.argv) > 3:
+        print ('Usage: python2.7 eigenfaces.py ' \
+            + '<att faces dir> [<celebrity faces dir>]')
+        sys.exit(1)
+    if not os.path.exists('results'):                             # create a folder where to store the results
+        os.makedirs('results')
+    else:
+        shutil.rmtree('results')                                 # clear everything in the results folder
+        os.makedirs('results')
+    efaces = Eigenfaces(str(sys.argv[1]))                      # create the Eigenfaces object with the data dir
+    efaces.evaluate()                                                           # evaluate our model
+    if len(sys.argv) == 3:                                       # if we have third argument (celebrity folder)
+        efaces.evaluate_celebrities(str(sys.argv[2]))            # find best matches for the celebrities
