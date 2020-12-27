@@ -1,0 +1,616 @@
+image: ./att_faces\s1\4.pgm
+result: correct
+
+image: ./att_faces\s1\6.pgm
+result: wrong, got 12
+
+image: ./att_faces\s1\7.pgm
+result: correct
+
+image: ./att_faces\s1\8.pgm
+result: correct
+
+image: ./att_faces\s1\9.pgm
+result: correct
+
+image: ./att_faces\s2\3.pgm
+result: correct
+
+image: ./att_faces\s2\5.pgm
+result: correct
+
+image: ./att_faces\s2\6.pgm
+result: correct
+
+image: ./att_faces\s2\8.pgm
+result: correct
+
+image: ./att_faces\s2\9.pgm
+result: wrong, got 11
+
+image: ./att_faces\s3\1.pgm
+result: correct
+
+image: ./att_faces\s3\7.pgm
+result: correct
+
+image: ./att_faces\s3\8.pgm
+result: wrong, got 35
+
+image: ./att_faces\s3\9.pgm
+result: wrong, got  4
+
+image: ./att_faces\s3\10.pgm
+result: wrong, got 35
+
+image: ./att_faces\s4\2.pgm
+result: correct
+
+image: ./att_faces\s4\6.pgm
+result: wrong, got 35
+
+image: ./att_faces\s4\7.pgm
+result: wrong, got  3
+
+image: ./att_faces\s4\8.pgm
+result: correct
+
+image: ./att_faces\s4\10.pgm
+result: wrong, got  3
+
+image: ./att_faces\s5\4.pgm
+result: correct
+
+image: ./att_faces\s5\6.pgm
+result: correct
+
+image: ./att_faces\s5\7.pgm
+result: correct
+
+image: ./att_faces\s5\9.pgm
+result: correct
+
+image: ./att_faces\s5\10.pgm
+result: wrong, got 18
+
+image: ./att_faces\s6\1.pgm
+result: correct
+
+image: ./att_faces\s6\4.pgm
+result: correct
+
+image: ./att_faces\s6\7.pgm
+result: correct
+
+image: ./att_faces\s6\9.pgm
+result: correct
+
+image: ./att_faces\s6\10.pgm
+result: correct
+
+image: ./att_faces\s7\1.pgm
+result: wrong, got 20
+
+image: ./att_faces\s7\2.pgm
+result: wrong, got 17
+
+image: ./att_faces\s7\7.pgm
+result: correct
+
+image: ./att_faces\s7\8.pgm
+result: wrong, got 20
+
+image: ./att_faces\s7\9.pgm
+result: wrong, got 20
+
+image: ./att_faces\s8\2.pgm
+result: correct
+
+image: ./att_faces\s8\5.pgm
+result: wrong, got 16
+
+image: ./att_faces\s8\6.pgm
+result: correct
+
+image: ./att_faces\s8\7.pgm
+result: correct
+
+image: ./att_faces\s8\10.pgm
+result: correct
+
+image: ./att_faces\s9\4.pgm
+result: correct
+
+image: ./att_faces\s9\5.pgm
+result: wrong, got 23
+
+image: ./att_faces\s9\8.pgm
+result: correct
+
+image: ./att_faces\s9\9.pgm
+result: wrong, got 23
+
+image: ./att_faces\s9\10.pgm
+result: correct
+
+image: ./att_faces\s10\2.pgm
+result: correct
+
+image: ./att_faces\s10\4.pgm
+result: correct
+
+image: ./att_faces\s10\5.pgm
+result: wrong, got 17
+
+image: ./att_faces\s10\7.pgm
+result: correct
+
+image: ./att_faces\s10\8.pgm
+result: correct
+
+image: ./att_faces\s11\2.pgm
+result: wrong, got 15
+
+image: ./att_faces\s11\3.pgm
+result: correct
+
+image: ./att_faces\s11\4.pgm
+result: correct
+
+image: ./att_faces\s11\7.pgm
+result: correct
+
+image: ./att_faces\s11\8.pgm
+result: wrong, got 15
+
+image: ./att_faces\s12\1.pgm
+result: correct
+
+image: ./att_faces\s12\3.pgm
+result: wrong, got 25
+
+image: ./att_faces\s12\4.pgm
+result: wrong, got 25
+
+image: ./att_faces\s12\9.pgm
+result: correct
+
+image: ./att_faces\s12\10.pgm
+result: correct
+
+image: ./att_faces\s13\2.pgm
+result: correct
+
+image: ./att_faces\s13\3.pgm
+result: correct
+
+image: ./att_faces\s13\4.pgm
+result: correct
+
+image: ./att_faces\s13\8.pgm
+result: correct
+
+image: ./att_faces\s13\10.pgm
+result: correct
+
+image: ./att_faces\s14\2.pgm
+result: correct
+
+image: ./att_faces\s14\3.pgm
+result: correct
+
+image: ./att_faces\s14\7.pgm
+result: correct
+
+image: ./att_faces\s14\9.pgm
+result: wrong, got 31
+
+image: ./att_faces\s14\10.pgm
+result: correct
+
+image: ./att_faces\s15\3.pgm
+result: correct
+
+image: ./att_faces\s15\4.pgm
+result: correct
+
+image: ./att_faces\s15\6.pgm
+result: correct
+
+image: ./att_faces\s15\7.pgm
+result: correct
+
+image: ./att_faces\s15\9.pgm
+result: correct
+
+image: ./att_faces\s16\1.pgm
+result: wrong, got 11
+
+image: ./att_faces\s16\3.pgm
+result: correct
+
+image: ./att_faces\s16\6.pgm
+result: wrong, got  2
+
+image: ./att_faces\s16\9.pgm
+result: wrong, got 32
+
+image: ./att_faces\s16\10.pgm
+result: wrong, got 36
+
+image: ./att_faces\s17\1.pgm
+result: wrong, got 32
+
+image: ./att_faces\s17\4.pgm
+result: correct
+
+image: ./att_faces\s17\5.pgm
+result: wrong, got  8
+
+image: ./att_faces\s17\6.pgm
+result: correct
+
+image: ./att_faces\s17\8.pgm
+result: correct
+
+image: ./att_faces\s18\2.pgm
+result: correct
+
+image: ./att_faces\s18\4.pgm
+result: wrong, got 13
+
+image: ./att_faces\s18\5.pgm
+result: correct
+
+image: ./att_faces\s18\6.pgm
+result: correct
+
+image: ./att_faces\s18\9.pgm
+result: correct
+
+image: ./att_faces\s19\1.pgm
+result: wrong, got 27
+
+image: ./att_faces\s19\3.pgm
+result: correct
+
+image: ./att_faces\s19\6.pgm
+result: correct
+
+image: ./att_faces\s19\7.pgm
+result: wrong, got 27
+
+image: ./att_faces\s19\8.pgm
+result: wrong, got 27
+
+image: ./att_faces\s20\1.pgm
+result: wrong, got 30
+
+image: ./att_faces\s20\2.pgm
+result: wrong, got 30
+
+image: ./att_faces\s20\3.pgm
+result: wrong, got 30
+
+image: ./att_faces\s20\6.pgm
+result: correct
+
+image: ./att_faces\s20\10.pgm
+result: wrong, got 33
+
+image: ./att_faces\s21\2.pgm
+result: correct
+
+image: ./att_faces\s21\4.pgm
+result: wrong, got 38
+
+image: ./att_faces\s21\6.pgm
+result: wrong, got 38
+
+image: ./att_faces\s21\7.pgm
+result: correct
+
+image: ./att_faces\s21\8.pgm
+result: wrong, got 31
+
+image: ./att_faces\s22\3.pgm
+result: correct
+
+image: ./att_faces\s22\4.pgm
+result: correct
+
+image: ./att_faces\s22\5.pgm
+result: wrong, got 34
+
+image: ./att_faces\s22\8.pgm
+result: correct
+
+image: ./att_faces\s22\10.pgm
+result: correct
+
+image: ./att_faces\s23\1.pgm
+result: correct
+
+image: ./att_faces\s23\2.pgm
+result: correct
+
+image: ./att_faces\s23\3.pgm
+result: correct
+
+image: ./att_faces\s23\6.pgm
+result: correct
+
+image: ./att_faces\s23\8.pgm
+result: wrong, got 38
+
+image: ./att_faces\s24\4.pgm
+result: wrong, got 27
+
+image: ./att_faces\s24\5.pgm
+result: wrong, got 11
+
+image: ./att_faces\s24\7.pgm
+result: correct
+
+image: ./att_faces\s24\9.pgm
+result: correct
+
+image: ./att_faces\s24\10.pgm
+result: correct
+
+image: ./att_faces\s25\2.pgm
+result: wrong, got 35
+
+image: ./att_faces\s25\3.pgm
+result: wrong, got 35
+
+image: ./att_faces\s25\6.pgm
+result: correct
+
+image: ./att_faces\s25\7.pgm
+result: wrong, got 35
+
+image: ./att_faces\s25\10.pgm
+result: wrong, got 35
+
+image: ./att_faces\s26\1.pgm
+result: wrong, got 35
+
+image: ./att_faces\s26\2.pgm
+result: correct
+
+image: ./att_faces\s26\3.pgm
+result: wrong, got 35
+
+image: ./att_faces\s26\6.pgm
+result: wrong, got 35
+
+image: ./att_faces\s26\10.pgm
+result: correct
+
+image: ./att_faces\s27\4.pgm
+result: correct
+
+image: ./att_faces\s27\5.pgm
+result: correct
+
+image: ./att_faces\s27\6.pgm
+result: wrong, got 15
+
+image: ./att_faces\s27\8.pgm
+result: wrong, got 15
+
+image: ./att_faces\s27\9.pgm
+result: wrong, got  2
+
+image: ./att_faces\s28\1.pgm
+result: correct
+
+image: ./att_faces\s28\4.pgm
+result: correct
+
+image: ./att_faces\s28\5.pgm
+result: correct
+
+image: ./att_faces\s28\6.pgm
+result: correct
+
+image: ./att_faces\s28\9.pgm
+result: wrong, got  2
+
+image: ./att_faces\s29\2.pgm
+result: correct
+
+image: ./att_faces\s29\3.pgm
+result: correct
+
+image: ./att_faces\s29\4.pgm
+result: correct
+
+image: ./att_faces\s29\8.pgm
+result: wrong, got 31
+
+image: ./att_faces\s29\9.pgm
+result: wrong, got 33
+
+image: ./att_faces\s30\1.pgm
+result: correct
+
+image: ./att_faces\s30\2.pgm
+result: wrong, got 33
+
+image: ./att_faces\s30\3.pgm
+result: wrong, got 10
+
+image: ./att_faces\s30\7.pgm
+result: wrong, got 33
+
+image: ./att_faces\s30\9.pgm
+result: wrong, got 10
+
+image: ./att_faces\s31\2.pgm
+result: wrong, got 15
+
+image: ./att_faces\s31\3.pgm
+result: correct
+
+image: ./att_faces\s31\4.pgm
+result: correct
+
+image: ./att_faces\s31\6.pgm
+result: wrong, got 15
+
+image: ./att_faces\s31\8.pgm
+result: wrong, got 21
+
+image: ./att_faces\s32\2.pgm
+result: correct
+
+image: ./att_faces\s32\3.pgm
+result: correct
+
+image: ./att_faces\s32\5.pgm
+result: wrong, got 16
+
+image: ./att_faces\s32\8.pgm
+result: correct
+
+image: ./att_faces\s32\9.pgm
+result: correct
+
+image: ./att_faces\s33\1.pgm
+result: correct
+
+image: ./att_faces\s33\2.pgm
+result: correct
+
+image: ./att_faces\s33\3.pgm
+result: correct
+
+image: ./att_faces\s33\4.pgm
+result: correct
+
+image: ./att_faces\s33\5.pgm
+result: correct
+
+image: ./att_faces\s34\3.pgm
+result: correct
+
+image: ./att_faces\s34\4.pgm
+result: correct
+
+image: ./att_faces\s34\7.pgm
+result: correct
+
+image: ./att_faces\s34\8.pgm
+result: correct
+
+image: ./att_faces\s34\9.pgm
+result: correct
+
+image: ./att_faces\s35\1.pgm
+result: correct
+
+image: ./att_faces\s35\3.pgm
+result: wrong, got  3
+
+image: ./att_faces\s35\4.pgm
+result: correct
+
+image: ./att_faces\s35\6.pgm
+result: wrong, got 12
+
+image: ./att_faces\s35\7.pgm
+result: correct
+
+image: ./att_faces\s36\2.pgm
+result: correct
+
+image: ./att_faces\s36\3.pgm
+result: correct
+
+image: ./att_faces\s36\5.pgm
+result: correct
+
+image: ./att_faces\s36\7.pgm
+result: correct
+
+image: ./att_faces\s36\10.pgm
+result: correct
+
+image: ./att_faces\s37\5.pgm
+result: correct
+
+image: ./att_faces\s37\6.pgm
+result: correct
+
+image: ./att_faces\s37\7.pgm
+result: correct
+
+image: ./att_faces\s37\8.pgm
+result: wrong, got 14
+
+image: ./att_faces\s37\10.pgm
+result: correct
+
+image: ./att_faces\s38\2.pgm
+result: wrong, got 23
+
+image: ./att_faces\s38\4.pgm
+result: correct
+
+image: ./att_faces\s38\5.pgm
+result: correct
+
+image: ./att_faces\s38\6.pgm
+result: correct
+
+image: ./att_faces\s38\7.pgm
+result: wrong, got 23
+
+image: ./att_faces\s39\5.pgm
+result: correct
+
+image: ./att_faces\s39\6.pgm
+result: correct
+
+image: ./att_faces\s39\7.pgm
+result: wrong, got 29
+
+image: ./att_faces\s39\8.pgm
+result: wrong, got 29
+
+image: ./att_faces\s39\10.pgm
+result: wrong, got 22
+
+image: ./att_faces\s40\4.pgm
+result: wrong, got  5
+
+image: ./att_faces\s40\5.pgm
+result: correct
+
+image: ./att_faces\s40\6.pgm
+result: correct
+
+image: ./att_faces\s40\9.pgm
+result: correct
+
+image: ./att_faces\s40\10.pgm
+result: wrong, got  5
+
+image: ./att_faces\s41\1.pgm
+result: correct
+
+image: ./att_faces\s41\3.pgm
+result: correct
+
+image: ./att_faces\s41\4.pgm
+result: correct
+
+image: ./att_faces\s41\7.pgm
+result: wrong, got 31
+
+image: ./att_faces\s41\10.pgm
+result: correct
+
+Correct: 63.41

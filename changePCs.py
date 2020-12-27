@@ -8,7 +8,7 @@ and recording the accuracy in a data text file
 """
 if __name__ == '__main__':
     energy_values = range(0,101)
-    f = open('energy.dat', 'w')
+    f = open('energy_PCs_Accuracy.dat', 'w')
     evalues_count=[]
     accuracy=[]
     for energy_value in energy_values:

@@ -137,13 +137,48 @@ class Eigenfaces(object):
             print("Match ID:%s" % matchID)
             print("Closest Face ID:%s" % str(closest_face_id+1))
         return matchID,closest_face_id                   # return the faceid (1..40)
+
+    def reconstruct(self, path_to_img,numOfPC):
+        img = cv2.imread(path_to_img, 0)                                        # read as a grayscale image
+        img_col = np.array(img, dtype='float64').flatten()                      # flatten the image
+        img_col -= self.mean_img_col                                            # subract the mean column
+        img_col = np.reshape(img_col, (self.mn, 1))                             # from row vector to col vector
+        output=self.mean_img_col.reshape(self.n,self.m)
+        for i in range(numOfPC):
+            weight=self.evectors[:,i].reshape(1,self.mn).dot(img_col)
+            output+=self.evectors[:,i].reshape(self.n,self.m)*int(weight)
+            # print(output.shape)
+        cv2.imwrite(Save_Path+"/Reconstruct_%s.jpg"%numOfPC,output)
+        # cv2.waitKey()
+
+
+        # S = self.evectors.transpose() * img_col                 # projecting the normalized probe onto the
+        #                                                         # Eigenspace, to find out the weights
+        # diff = self.W - S                                                       # finding the min ||W_j - S||
+        # norms = np.linalg.norm(diff, axis=0)
+        # closest_face_id = np.argmin(norms)               # the id [0..240) of the minerror face to the sample
+        # matchID=int(closest_face_id / self.train_faces_count) + 1
+        # if isShow:
+        #     closest_face = os.path.join(self.faces_dir,
+        #                                's' + str(matchID), str(self.training_ids[matchID-1][closest_face_id-(matchID-1)*self.train_faces_count]) + '.pgm')  # relative path
+        #     closest_face_img = cv2.imread(closest_face, 0)  # read a grayscale image
+        #     closest_face_img_resize=cv2.resize(closest_face_img, (5 * img.shape[1], 5 * img.shape[0]))
+        #     cv2.imshow('ClosestFaceID:%s' % str(closest_face_id+1), closest_face_img_resize)
+        #     imgResize = cv2.resize(img, (5 * img.shape[1], 5 * img.shape[0]))
+        #     cv2.putText(imgResize, 'Match:%s' % matchID, (30, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 255), 2)
+        #     cv2.imshow('Match:%s' % matchID, imgResize)
+        #     cv2.waitKey()
+        #     print("Match ID:%s" % matchID)
+        #     print("Closest Face ID:%s" % str(closest_face_id+1))
+        # return matchID,closest_face_id                   # return the faceid (1..40)
+
     """
     Evaluate the model using the 4 test faces left
     from every different face in the AT&T set.
     """
     def evaluate(self):
         print ('> Evaluating AT&T faces started')
-        results_file = os.path.join('results', 'att_results.txt')               # filename for writing the evaluating results in
+        results_file = os.path.join(Save_Path,'results_%s.txt'%str(int(100*self.energy)))               # filename for writing the evaluating results in
         f = open(results_file, 'w')                                             # the actual file
         test_count = self.test_faces_count * self.faces_count       # number of all AT&T test images/faces
         test_correct = 0
