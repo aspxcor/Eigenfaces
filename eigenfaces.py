@@ -150,7 +150,7 @@ class Eigenfaces(object):
             closestFaceImgResize=cv2.resize(closestFaceImg, (5 * img.shape[1], 5 * img.shape[0]))
             cv2.imshow('ClosestFaceID:%s' % str(closestFaceID+1), closestFaceImgResize)
             imgResize = cv2.resize(img, (5 * img.shape[1], 5 * img.shape[0]))
-            cv2.putText(imgResize, 'Match:%s' % matchID, (30, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 255), 2)
+            cv2.putText(imgResize, 'Match:%s' % matchID, (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 255), 2)
             cv2.imshow('Match:%s' % matchID, imgResize)
             cv2.waitKey()
             print("Match ID:%s" % matchID)

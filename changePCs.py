@@ -2,7 +2,7 @@ from Eigenfaces import *
 from scipy.interpolate import make_interp_spline
 
 # Some global variables and basic hyperparameter information are defined here
-Path="./att_faces"
+Path="./Dataset"
 
 # [Function name] changePCs
 # [Function Usage] This function is used to test and plot the change in recognition accuracy as the number of PCs increases
@@ -16,9 +16,9 @@ if __name__ == '__main__':
     evaluesCount=[]
     accuracy=[]
     for energyValue in energyValues:
-        print('> Evaluating Energy:%s%%'%energyValue)
         efaces = Eigenfaces(Path, float(energyValue / 100.0))
         efaces.evaluate()
+        print('> Evaluating Energy:%s%%. Number of PCs:%s' % (energyValue,efaces.evaluesCount))
         f.write('%d %d %.6lf\n' % (energyValue, efaces.evaluesCount, efaces.accuracy))
         if len(evaluesCount) and evaluesCount[len(evaluesCount)-1]==efaces.evaluesCount:
             accuracy[len(evaluesCount)-1]=max(efaces.accuracy,accuracy[len(evaluesCount)-1])

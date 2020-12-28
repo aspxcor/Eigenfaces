@@ -1,7 +1,7 @@
 from Eigenfaces import *
 
 # Some global variables and basic hyperparameter information are defined here
-Path="./att_faces"
+Path="./Dataset"
 Save_Path = "./Output"
 
 # [Function name] myreconstruct
@@ -14,7 +14,7 @@ Save_Path = "./Output"
 # [Developer and date] Zhi DING 2020/12/28
 # [Change Record] None
 def myreconstruct(face,model,path):
-    efaces = readInModel(model)                      # create the Eigenfaces object with the data dir
+    efaces = readInModel(model)
     faceDir=os.path.join(path,face)
     numOfPCs=[10, 25, 50, 100, 150, 200]
     for numOfPC in numOfPCs:                        # reconstruct the picture

@@ -1,7 +1,7 @@
 from Eigenfaces import *
 
 # Some global variables and basic hyperparameter information are defined here
-Path="./att_faces"
+Path="./Dataset"
 
 # [Function name] mytest
 # [Function Usage] This function is used to test whether the model we trained can correctly recognize new pictures
@@ -13,7 +13,7 @@ Path="./att_faces"
 # [Developer and date] Zhi DING 2020/12/28
 # [Change Record] None
 def mytest(face,model,path):
-    efaces = readInModel(model)                      # create the Eigenfaces object with the data dir
+    efaces = readInModel(model)
     faceDir=os.path.join(path,face)
     efaces.classify(faceDir,True)
 

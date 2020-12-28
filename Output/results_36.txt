@@ -1,616 +1,616 @@
-Image: ./att_faces\s1\1.pgm
-Result: Wrong. The correct answer should be  1 while got  8
+Image: ./Dataset\s1\2.pgm
+Result: Wrong. The correct answer should be  1 while got 13
 
-Image: ./att_faces\s1\4.pgm
+Image: ./Dataset\s1\4.pgm
 Result: Correct
 
-Image: ./att_faces\s1\6.pgm
-Result: Wrong. The correct answer should be  1 while got 18
-
-Image: ./att_faces\s1\9.pgm
+Image: ./Dataset\s1\7.pgm
 Result: Correct
 
-Image: ./att_faces\s1\10.pgm
+Image: ./Dataset\s1\8.pgm
 Result: Correct
 
-Image: ./att_faces\s2\1.pgm
+Image: ./Dataset\s1\10.pgm
 Result: Correct
 
-Image: ./att_faces\s2\5.pgm
+Image: ./Dataset\s2\2.pgm
 Result: Correct
 
-Image: ./att_faces\s2\7.pgm
+Image: ./Dataset\s2\3.pgm
 Result: Correct
 
-Image: ./att_faces\s2\8.pgm
+Image: ./Dataset\s2\5.pgm
 Result: Correct
 
-Image: ./att_faces\s2\10.pgm
+Image: ./Dataset\s2\6.pgm
+Result: Wrong. The correct answer should be  2 while got 15
+
+Image: ./Dataset\s2\7.pgm
 Result: Correct
 
-Image: ./att_faces\s3\1.pgm
+Image: ./Dataset\s3\1.pgm
 Result: Wrong. The correct answer should be  3 while got  4
 
-Image: ./att_faces\s3\3.pgm
+Image: ./Dataset\s3\2.pgm
 Result: Wrong. The correct answer should be  3 while got  4
 
-Image: ./att_faces\s3\7.pgm
-Result: Wrong. The correct answer should be  3 while got 35
-
-Image: ./att_faces\s3\8.pgm
-Result: Wrong. The correct answer should be  3 while got 35
-
-Image: ./att_faces\s3\10.pgm
+Image: ./Dataset\s3\5.pgm
 Result: Correct
 
-Image: ./att_faces\s4\4.pgm
-Result: Wrong. The correct answer should be  4 while got  3
+Image: ./Dataset\s3\6.pgm
+Result: Wrong. The correct answer should be  3 while got  4
 
-Image: ./att_faces\s4\5.pgm
-Result: Wrong. The correct answer should be  4 while got  3
+Image: ./Dataset\s3\9.pgm
+Result: Wrong. The correct answer should be  3 while got  4
 
-Image: ./att_faces\s4\6.pgm
-Result: Wrong. The correct answer should be  4 while got 12
+Image: ./Dataset\s4\2.pgm
+Result: Wrong. The correct answer should be  4 while got  8
 
-Image: ./att_faces\s4\7.pgm
-Result: Wrong. The correct answer should be  4 while got  3
-
-Image: ./att_faces\s4\10.pgm
-Result: Wrong. The correct answer should be  4 while got  7
-
-Image: ./att_faces\s5\2.pgm
+Image: ./Dataset\s4\7.pgm
 Result: Correct
 
-Image: ./att_faces\s5\4.pgm
+Image: ./Dataset\s4\8.pgm
 Result: Correct
 
-Image: ./att_faces\s5\6.pgm
+Image: ./Dataset\s4\9.pgm
+Result: Wrong. The correct answer should be  4 while got  8
+
+Image: ./Dataset\s4\10.pgm
 Result: Correct
 
-Image: ./att_faces\s5\8.pgm
+Image: ./Dataset\s5\1.pgm
 Result: Correct
 
-Image: ./att_faces\s5\10.pgm
+Image: ./Dataset\s5\3.pgm
+Result: Wrong. The correct answer should be  5 while got 40
+
+Image: ./Dataset\s5\5.pgm
 Result: Correct
 
-Image: ./att_faces\s6\2.pgm
+Image: ./Dataset\s5\8.pgm
 Result: Correct
 
-Image: ./att_faces\s6\3.pgm
+Image: ./Dataset\s5\10.pgm
+Result: Wrong. The correct answer should be  5 while got 18
+
+Image: ./Dataset\s6\2.pgm
 Result: Correct
 
-Image: ./att_faces\s6\5.pgm
+Image: ./Dataset\s6\3.pgm
 Result: Correct
 
-Image: ./att_faces\s6\6.pgm
+Image: ./Dataset\s6\8.pgm
 Result: Correct
 
-Image: ./att_faces\s6\10.pgm
+Image: ./Dataset\s6\9.pgm
 Result: Correct
 
-Image: ./att_faces\s7\2.pgm
-Result: Wrong. The correct answer should be  7 while got 27
-
-Image: ./att_faces\s7\5.pgm
+Image: ./Dataset\s6\10.pgm
 Result: Correct
 
-Image: ./att_faces\s7\6.pgm
+Image: ./Dataset\s7\2.pgm
+Result: Wrong. The correct answer should be  7 while got 36
+
+Image: ./Dataset\s7\5.pgm
+Result: Wrong. The correct answer should be  7 while got 10
+
+Image: ./Dataset\s7\6.pgm
+Result: Wrong. The correct answer should be  7 while got 20
+
+Image: ./Dataset\s7\7.pgm
 Result: Correct
 
-Image: ./att_faces\s7\8.pgm
+Image: ./Dataset\s7\8.pgm
 Result: Correct
 
-Image: ./att_faces\s7\9.pgm
+Image: ./Dataset\s8\1.pgm
 Result: Correct
 
-Image: ./att_faces\s8\1.pgm
-Result: Wrong. The correct answer should be  8 while got  4
-
-Image: ./att_faces\s8\3.pgm
+Image: ./Dataset\s8\5.pgm
 Result: Correct
 
-Image: ./att_faces\s8\4.pgm
-Result: Wrong. The correct answer should be  8 while got  4
-
-Image: ./att_faces\s8\7.pgm
-Result: Wrong. The correct answer should be  8 while got  4
-
-Image: ./att_faces\s8\9.pgm
+Image: ./Dataset\s8\6.pgm
 Result: Correct
 
-Image: ./att_faces\s9\3.pgm
+Image: ./Dataset\s8\7.pgm
 Result: Correct
 
-Image: ./att_faces\s9\4.pgm
+Image: ./Dataset\s8\10.pgm
+Result: Correct
+
+Image: ./Dataset\s9\1.pgm
 Result: Wrong. The correct answer should be  9 while got 38
 
-Image: ./att_faces\s9\5.pgm
-Result: Correct
+Image: ./Dataset\s9\2.pgm
+Result: Wrong. The correct answer should be  9 while got 38
 
-Image: ./att_faces\s9\7.pgm
-Result: Correct
+Image: ./Dataset\s9\3.pgm
+Result: Wrong. The correct answer should be  9 while got 21
 
-Image: ./att_faces\s9\10.pgm
-Result: Correct
+Image: ./Dataset\s9\6.pgm
+Result: Wrong. The correct answer should be  9 while got 38
 
-Image: ./att_faces\s10\2.pgm
-Result: Correct
+Image: ./Dataset\s9\7.pgm
+Result: Wrong. The correct answer should be  9 while got 38
 
-Image: ./att_faces\s10\3.pgm
+Image: ./Dataset\s10\1.pgm
+Result: Wrong. The correct answer should be 10 while got 30
+
+Image: ./Dataset\s10\3.pgm
 Result: Wrong. The correct answer should be 10 while got 20
 
-Image: ./att_faces\s10\4.pgm
+Image: ./Dataset\s10\4.pgm
 Result: Correct
 
-Image: ./att_faces\s10\8.pgm
+Image: ./Dataset\s10\5.pgm
 Result: Correct
 
-Image: ./att_faces\s10\10.pgm
-Result: Wrong. The correct answer should be 10 while got  7
-
-Image: ./att_faces\s11\2.pgm
-Result: Wrong. The correct answer should be 11 while got 15
-
-Image: ./att_faces\s11\3.pgm
-Result: Wrong. The correct answer should be 11 while got 15
-
-Image: ./att_faces\s11\7.pgm
+Image: ./Dataset\s10\6.pgm
 Result: Correct
 
-Image: ./att_faces\s11\8.pgm
+Image: ./Dataset\s11\3.pgm
 Result: Wrong. The correct answer should be 11 while got 15
 
-Image: ./att_faces\s11\9.pgm
+Image: ./Dataset\s11\5.pgm
+Result: Correct
+
+Image: ./Dataset\s11\8.pgm
+Result: Correct
+
+Image: ./Dataset\s11\9.pgm
 Result: Wrong. The correct answer should be 11 while got 15
 
-Image: ./att_faces\s12\1.pgm
+Image: ./Dataset\s11\10.pgm
+Result: Correct
+
+Image: ./Dataset\s12\1.pgm
 Result: Wrong. The correct answer should be 12 while got  1
 
-Image: ./att_faces\s12\2.pgm
-Result: Wrong. The correct answer should be 12 while got 26
-
-Image: ./att_faces\s12\6.pgm
-Result: Wrong. The correct answer should be 12 while got 32
-
-Image: ./att_faces\s12\8.pgm
+Image: ./Dataset\s12\5.pgm
 Result: Correct
 
-Image: ./att_faces\s12\10.pgm
+Image: ./Dataset\s12\7.pgm
 Result: Correct
 
-Image: ./att_faces\s13\1.pgm
+Image: ./Dataset\s12\8.pgm
 Result: Correct
 
-Image: ./att_faces\s13\2.pgm
+Image: ./Dataset\s12\9.pgm
 Result: Correct
 
-Image: ./att_faces\s13\4.pgm
+Image: ./Dataset\s13\1.pgm
 Result: Correct
 
-Image: ./att_faces\s13\5.pgm
+Image: ./Dataset\s13\2.pgm
 Result: Correct
 
-Image: ./att_faces\s13\10.pgm
+Image: ./Dataset\s13\4.pgm
 Result: Correct
 
-Image: ./att_faces\s14\3.pgm
+Image: ./Dataset\s13\6.pgm
 Result: Correct
 
-Image: ./att_faces\s14\5.pgm
+Image: ./Dataset\s13\10.pgm
 Result: Correct
 
-Image: ./att_faces\s14\6.pgm
-Result: Wrong. The correct answer should be 14 while got 28
-
-Image: ./att_faces\s14\8.pgm
-Result: Wrong. The correct answer should be 14 while got 37
-
-Image: ./att_faces\s14\9.pgm
+Image: ./Dataset\s14\2.pgm
 Result: Correct
 
-Image: ./att_faces\s15\1.pgm
+Image: ./Dataset\s14\3.pgm
 Result: Correct
 
-Image: ./att_faces\s15\4.pgm
+Image: ./Dataset\s14\4.pgm
 Result: Correct
 
-Image: ./att_faces\s15\5.pgm
+Image: ./Dataset\s14\5.pgm
 Result: Correct
 
-Image: ./att_faces\s15\9.pgm
+Image: ./Dataset\s14\9.pgm
+Result: Wrong. The correct answer should be 14 while got 31
+
+Image: ./Dataset\s15\2.pgm
 Result: Correct
 
-Image: ./att_faces\s15\10.pgm
+Image: ./Dataset\s15\3.pgm
 Result: Correct
 
-Image: ./att_faces\s16\2.pgm
+Image: ./Dataset\s15\5.pgm
+Result: Correct
+
+Image: ./Dataset\s15\8.pgm
+Result: Correct
+
+Image: ./Dataset\s15\10.pgm
+Result: Correct
+
+Image: ./Dataset\s16\1.pgm
+Result: Wrong. The correct answer should be 16 while got 11
+
+Image: ./Dataset\s16\4.pgm
+Result: Correct
+
+Image: ./Dataset\s16\6.pgm
+Result: Wrong. The correct answer should be 16 while got 27
+
+Image: ./Dataset\s16\8.pgm
+Result: Correct
+
+Image: ./Dataset\s16\10.pgm
 Result: Wrong. The correct answer should be 16 while got 36
 
-Image: ./att_faces\s16\3.pgm
+Image: ./Dataset\s17\2.pgm
+Result: Wrong. The correct answer should be 17 while got  8
+
+Image: ./Dataset\s17\4.pgm
 Result: Correct
 
-Image: ./att_faces\s16\4.pgm
+Image: ./Dataset\s17\6.pgm
 Result: Correct
 
-Image: ./att_faces\s16\8.pgm
-Result: Wrong. The correct answer should be 16 while got 32
-
-Image: ./att_faces\s16\9.pgm
-Result: Wrong. The correct answer should be 16 while got 32
-
-Image: ./att_faces\s17\1.pgm
-Result: Wrong. The correct answer should be 17 while got 16
-
-Image: ./att_faces\s17\3.pgm
-Result: Wrong. The correct answer should be 17 while got  7
-
-Image: ./att_faces\s17\4.pgm
-Result: Wrong. The correct answer should be 17 while got  7
-
-Image: ./att_faces\s17\5.pgm
-Result: Wrong. The correct answer should be 17 while got 36
-
-Image: ./att_faces\s17\6.pgm
+Image: ./Dataset\s17\8.pgm
 Result: Correct
 
-Image: ./att_faces\s18\1.pgm
+Image: ./Dataset\s17\9.pgm
 Result: Correct
 
-Image: ./att_faces\s18\6.pgm
+Image: ./Dataset\s18\1.pgm
 Result: Correct
 
-Image: ./att_faces\s18\7.pgm
+Image: ./Dataset\s18\3.pgm
 Result: Correct
 
-Image: ./att_faces\s18\9.pgm
+Image: ./Dataset\s18\4.pgm
+Result: Wrong. The correct answer should be 18 while got 13
+
+Image: ./Dataset\s18\7.pgm
 Result: Correct
 
-Image: ./att_faces\s18\10.pgm
-Result: Wrong. The correct answer should be 18 while got  5
+Image: ./Dataset\s18\9.pgm
+Result: Correct
 
-Image: ./att_faces\s19\2.pgm
+Image: ./Dataset\s19\1.pgm
 Result: Wrong. The correct answer should be 19 while got 27
 
-Image: ./att_faces\s19\3.pgm
+Image: ./Dataset\s19\4.pgm
+Result: Correct
+
+Image: ./Dataset\s19\6.pgm
+Result: Correct
+
+Image: ./Dataset\s19\7.pgm
+Result: Correct
+
+Image: ./Dataset\s19\10.pgm
 Result: Wrong. The correct answer should be 19 while got 27
 
-Image: ./att_faces\s19\4.pgm
+Image: ./Dataset\s20\1.pgm
 Result: Correct
 
-Image: ./att_faces\s19\7.pgm
+Image: ./Dataset\s20\6.pgm
 Result: Correct
 
-Image: ./att_faces\s19\8.pgm
-Result: Wrong. The correct answer should be 19 while got 27
-
-Image: ./att_faces\s20\2.pgm
-Result: Correct
-
-Image: ./att_faces\s20\4.pgm
-Result: Correct
-
-Image: ./att_faces\s20\6.pgm
-Result: Correct
-
-Image: ./att_faces\s20\9.pgm
+Image: ./Dataset\s20\7.pgm
 Result: Wrong. The correct answer should be 20 while got 10
 
-Image: ./att_faces\s20\10.pgm
+Image: ./Dataset\s20\9.pgm
+Result: Wrong. The correct answer should be 20 while got 23
+
+Image: ./Dataset\s20\10.pgm
 Result: Correct
 
-Image: ./att_faces\s21\4.pgm
+Image: ./Dataset\s21\4.pgm
 Result: Correct
 
-Image: ./att_faces\s21\6.pgm
+Image: ./Dataset\s21\5.pgm
+Result: Wrong. The correct answer should be 21 while got 38
+
+Image: ./Dataset\s21\7.pgm
+Result: Wrong. The correct answer should be 21 while got 38
+
+Image: ./Dataset\s21\8.pgm
 Result: Correct
 
-Image: ./att_faces\s21\7.pgm
+Image: ./Dataset\s21\9.pgm
 Result: Correct
 
-Image: ./att_faces\s21\8.pgm
+Image: ./Dataset\s22\2.pgm
 Result: Correct
 
-Image: ./att_faces\s21\9.pgm
-Result: Wrong. The correct answer should be 21 while got 29
-
-Image: ./att_faces\s22\1.pgm
+Image: ./Dataset\s22\4.pgm
 Result: Correct
 
-Image: ./att_faces\s22\2.pgm
-Result: Correct
-
-Image: ./att_faces\s22\5.pgm
+Image: ./Dataset\s22\5.pgm
 Result: Wrong. The correct answer should be 22 while got 34
 
-Image: ./att_faces\s22\8.pgm
+Image: ./Dataset\s22\9.pgm
 Result: Correct
 
-Image: ./att_faces\s22\9.pgm
+Image: ./Dataset\s22\10.pgm
 Result: Correct
 
-Image: ./att_faces\s23\1.pgm
+Image: ./Dataset\s23\1.pgm
 Result: Wrong. The correct answer should be 23 while got  9
 
-Image: ./att_faces\s23\2.pgm
-Result: Wrong. The correct answer should be 23 while got  9
-
-Image: ./att_faces\s23\5.pgm
+Image: ./Dataset\s23\3.pgm
 Result: Correct
 
-Image: ./att_faces\s23\8.pgm
-Result: Wrong. The correct answer should be 23 while got  9
-
-Image: ./att_faces\s23\10.pgm
-Result: Wrong. The correct answer should be 23 while got  9
-
-Image: ./att_faces\s24\1.pgm
+Image: ./Dataset\s23\6.pgm
 Result: Correct
 
-Image: ./att_faces\s24\3.pgm
+Image: ./Dataset\s23\7.pgm
+Result: Wrong. The correct answer should be 23 while got 38
+
+Image: ./Dataset\s23\8.pgm
 Result: Correct
 
-Image: ./att_faces\s24\4.pgm
+Image: ./Dataset\s24\3.pgm
 Result: Correct
 
-Image: ./att_faces\s24\5.pgm
+Image: ./Dataset\s24\5.pgm
 Result: Wrong. The correct answer should be 24 while got 11
 
-Image: ./att_faces\s24\8.pgm
+Image: ./Dataset\s24\7.pgm
 Result: Correct
 
-Image: ./att_faces\s25\1.pgm
+Image: ./Dataset\s24\8.pgm
 Result: Correct
 
-Image: ./att_faces\s25\2.pgm
+Image: ./Dataset\s24\10.pgm
 Result: Correct
 
-Image: ./att_faces\s25\8.pgm
+Image: ./Dataset\s25\3.pgm
+Result: Correct
+
+Image: ./Dataset\s25\4.pgm
+Result: Wrong. The correct answer should be 25 while got 26
+
+Image: ./Dataset\s25\5.pgm
+Result: Wrong. The correct answer should be 25 while got 26
+
+Image: ./Dataset\s25\6.pgm
+Result: Correct
+
+Image: ./Dataset\s25\9.pgm
 Result: Wrong. The correct answer should be 25 while got 12
 
-Image: ./att_faces\s25\9.pgm
-Result: Wrong. The correct answer should be 25 while got 12
-
-Image: ./att_faces\s25\10.pgm
-Result: Correct
-
-Image: ./att_faces\s26\1.pgm
+Image: ./Dataset\s26\1.pgm
 Result: Wrong. The correct answer should be 26 while got 37
 
-Image: ./att_faces\s26\2.pgm
+Image: ./Dataset\s26\5.pgm
+Result: Correct
+
+Image: ./Dataset\s26\6.pgm
 Result: Wrong. The correct answer should be 26 while got 12
 
-Image: ./att_faces\s26\4.pgm
-Result: Wrong. The correct answer should be 26 while got 12
-
-Image: ./att_faces\s26\7.pgm
+Image: ./Dataset\s26\9.pgm
 Result: Correct
 
-Image: ./att_faces\s26\8.pgm
+Image: ./Dataset\s26\10.pgm
 Result: Correct
 
-Image: ./att_faces\s27\3.pgm
+Image: ./Dataset\s27\3.pgm
 Result: Correct
 
-Image: ./att_faces\s27\4.pgm
-Result: Wrong. The correct answer should be 27 while got 19
-
-Image: ./att_faces\s27\6.pgm
+Image: ./Dataset\s27\5.pgm
 Result: Correct
 
-Image: ./att_faces\s27\9.pgm
-Result: Wrong. The correct answer should be 27 while got  2
+Image: ./Dataset\s27\6.pgm
+Result: Wrong. The correct answer should be 27 while got 15
 
-Image: ./att_faces\s27\10.pgm
-Result: Wrong. The correct answer should be 27 while got 19
+Image: ./Dataset\s27\8.pgm
+Result: Wrong. The correct answer should be 27 while got 15
 
-Image: ./att_faces\s28\1.pgm
+Image: ./Dataset\s27\10.pgm
+Result: Wrong. The correct answer should be 27 while got 28
+
+Image: ./Dataset\s28\4.pgm
 Result: Correct
 
-Image: ./att_faces\s28\2.pgm
+Image: ./Dataset\s28\5.pgm
 Result: Correct
 
-Image: ./att_faces\s28\4.pgm
+Image: ./Dataset\s28\6.pgm
 Result: Correct
 
-Image: ./att_faces\s28\8.pgm
-Result: Wrong. The correct answer should be 28 while got 37
-
-Image: ./att_faces\s28\9.pgm
-Result: Wrong. The correct answer should be 28 while got  2
-
-Image: ./att_faces\s29\1.pgm
+Image: ./Dataset\s28\7.pgm
 Result: Correct
 
-Image: ./att_faces\s29\2.pgm
+Image: ./Dataset\s28\10.pgm
 Result: Correct
 
-Image: ./att_faces\s29\6.pgm
+Image: ./Dataset\s29\1.pgm
 Result: Correct
 
-Image: ./att_faces\s29\8.pgm
-Result: Wrong. The correct answer should be 29 while got 31
-
-Image: ./att_faces\s29\10.pgm
+Image: ./Dataset\s29\2.pgm
 Result: Correct
 
-Image: ./att_faces\s30\3.pgm
+Image: ./Dataset\s29\4.pgm
+Result: Wrong. The correct answer should be 29 while got 30
+
+Image: ./Dataset\s29\5.pgm
+Result: Wrong. The correct answer should be 29 while got 21
+
+Image: ./Dataset\s29\6.pgm
+Result: Wrong. The correct answer should be 29 while got 21
+
+Image: ./Dataset\s30\3.pgm
+Result: Wrong. The correct answer should be 30 while got 20
+
+Image: ./Dataset\s30\4.pgm
+Result: Correct
+
+Image: ./Dataset\s30\5.pgm
 Result: Wrong. The correct answer should be 30 while got 29
 
-Image: ./att_faces\s30\4.pgm
+Image: ./Dataset\s30\7.pgm
 Result: Correct
 
-Image: ./att_faces\s30\5.pgm
-Result: Wrong. The correct answer should be 30 while got 29
-
-Image: ./att_faces\s30\7.pgm
+Image: ./Dataset\s30\9.pgm
 Result: Correct
 
-Image: ./att_faces\s30\8.pgm
+Image: ./Dataset\s31\1.pgm
+Result: Wrong. The correct answer should be 31 while got 29
+
+Image: ./Dataset\s31\2.pgm
+Result: Wrong. The correct answer should be 31 while got 11
+
+Image: ./Dataset\s31\5.pgm
 Result: Correct
 
-Image: ./att_faces\s31\2.pgm
+Image: ./Dataset\s31\7.pgm
+Result: Wrong. The correct answer should be 31 while got 29
+
+Image: ./Dataset\s31\9.pgm
+Result: Wrong. The correct answer should be 31 while got 21
+
+Image: ./Dataset\s32\1.pgm
 Result: Correct
 
-Image: ./att_faces\s31\5.pgm
+Image: ./Dataset\s32\6.pgm
+Result: Wrong. The correct answer should be 32 while got 16
+
+Image: ./Dataset\s32\7.pgm
+Result: Wrong. The correct answer should be 32 while got 17
+
+Image: ./Dataset\s32\9.pgm
+Result: Wrong. The correct answer should be 32 while got 16
+
+Image: ./Dataset\s32\10.pgm
+Result: Wrong. The correct answer should be 32 while got  2
+
+Image: ./Dataset\s33\2.pgm
 Result: Correct
 
-Image: ./att_faces\s31\6.pgm
-Result: Correct
-
-Image: ./att_faces\s31\7.pgm
-Result: Correct
-
-Image: ./att_faces\s31\9.pgm
-Result: Correct
-
-Image: ./att_faces\s32\3.pgm
-Result: Correct
-
-Image: ./att_faces\s32\4.pgm
-Result: Correct
-
-Image: ./att_faces\s32\5.pgm
-Result: Correct
-
-Image: ./att_faces\s32\8.pgm
-Result: Correct
-
-Image: ./att_faces\s32\10.pgm
-Result: Correct
-
-Image: ./att_faces\s33\1.pgm
+Image: ./Dataset\s33\4.pgm
 Result: Wrong. The correct answer should be 33 while got 29
 
-Image: ./att_faces\s33\2.pgm
+Image: ./Dataset\s33\5.pgm
 Result: Correct
 
-Image: ./att_faces\s33\3.pgm
-Result: Wrong. The correct answer should be 33 while got 29
+Image: ./Dataset\s33\6.pgm
+Result: Wrong. The correct answer should be 33 while got 30
 
-Image: ./att_faces\s33\8.pgm
+Image: ./Dataset\s33\10.pgm
 Result: Correct
 
-Image: ./att_faces\s33\10.pgm
+Image: ./Dataset\s34\1.pgm
 Result: Correct
 
-Image: ./att_faces\s34\3.pgm
+Image: ./Dataset\s34\2.pgm
 Result: Correct
 
-Image: ./att_faces\s34\4.pgm
+Image: ./Dataset\s34\3.pgm
 Result: Correct
 
-Image: ./att_faces\s34\5.pgm
+Image: ./Dataset\s34\5.pgm
 Result: Correct
 
-Image: ./att_faces\s34\6.pgm
+Image: ./Dataset\s34\6.pgm
 Result: Correct
 
-Image: ./att_faces\s34\10.pgm
+Image: ./Dataset\s35\1.pgm
 Result: Correct
 
-Image: ./att_faces\s35\4.pgm
+Image: ./Dataset\s35\2.pgm
 Result: Wrong. The correct answer should be 35 while got 15
 
-Image: ./att_faces\s35\5.pgm
-Result: Wrong. The correct answer should be 35 while got 26
+Image: ./Dataset\s35\3.pgm
+Result: Wrong. The correct answer should be 35 while got  3
 
-Image: ./att_faces\s35\6.pgm
+Image: ./Dataset\s35\5.pgm
 Result: Wrong. The correct answer should be 35 while got 12
 
-Image: ./att_faces\s35\9.pgm
+Image: ./Dataset\s35\7.pgm
 Result: Wrong. The correct answer should be 35 while got 12
 
-Image: ./att_faces\s35\10.pgm
+Image: ./Dataset\s36\2.pgm
 Result: Correct
 
-Image: ./att_faces\s36\1.pgm
+Image: ./Dataset\s36\4.pgm
 Result: Correct
 
-Image: ./att_faces\s36\2.pgm
+Image: ./Dataset\s36\6.pgm
+Result: Wrong. The correct answer should be 36 while got 17
+
+Image: ./Dataset\s36\7.pgm
 Result: Wrong. The correct answer should be 36 while got 20
 
-Image: ./att_faces\s36\3.pgm
+Image: ./Dataset\s36\10.pgm
+Result: Wrong. The correct answer should be 36 while got 17
+
+Image: ./Dataset\s37\2.pgm
 Result: Correct
 
-Image: ./att_faces\s36\4.pgm
+Image: ./Dataset\s37\4.pgm
 Result: Correct
 
-Image: ./att_faces\s36\7.pgm
-Result: Wrong. The correct answer should be 36 while got 20
-
-Image: ./att_faces\s37\1.pgm
+Image: ./Dataset\s37\7.pgm
 Result: Correct
 
-Image: ./att_faces\s37\2.pgm
+Image: ./Dataset\s37\8.pgm
+Result: Wrong. The correct answer should be 37 while got 14
+
+Image: ./Dataset\s37\9.pgm
 Result: Correct
 
-Image: ./att_faces\s37\3.pgm
+Image: ./Dataset\s38\1.pgm
 Result: Correct
 
-Image: ./att_faces\s37\7.pgm
-Result: Correct
+Image: ./Dataset\s38\3.pgm
+Result: Wrong. The correct answer should be 38 while got 21
 
-Image: ./att_faces\s37\10.pgm
-Result: Correct
-
-Image: ./att_faces\s38\2.pgm
-Result: Correct
-
-Image: ./att_faces\s38\3.pgm
+Image: ./Dataset\s38\4.pgm
 Result: Wrong. The correct answer should be 38 while got  9
 
-Image: ./att_faces\s38\6.pgm
-Result: Wrong. The correct answer should be 38 while got 23
-
-Image: ./att_faces\s38\8.pgm
-Result: Wrong. The correct answer should be 38 while got  9
-
-Image: ./att_faces\s38\9.pgm
-Result: Wrong. The correct answer should be 38 while got  9
-
-Image: ./att_faces\s39\3.pgm
+Image: ./Dataset\s38\5.pgm
 Result: Correct
 
-Image: ./att_faces\s39\5.pgm
+Image: ./Dataset\s38\10.pgm
 Result: Correct
 
-Image: ./att_faces\s39\7.pgm
-Result: Wrong. The correct answer should be 39 while got 29
-
-Image: ./att_faces\s39\8.pgm
-Result: Wrong. The correct answer should be 39 while got 29
-
-Image: ./att_faces\s39\10.pgm
-Result: Wrong. The correct answer should be 39 while got 22
-
-Image: ./att_faces\s40\1.pgm
+Image: ./Dataset\s39\2.pgm
 Result: Correct
 
-Image: ./att_faces\s40\2.pgm
+Image: ./Dataset\s39\3.pgm
 Result: Correct
 
-Image: ./att_faces\s40\5.pgm
+Image: ./Dataset\s39\6.pgm
+Result: Correct
+
+Image: ./Dataset\s39\9.pgm
+Result: Correct
+
+Image: ./Dataset\s39\10.pgm
+Result: Correct
+
+Image: ./Dataset\s40\3.pgm
+Result: Correct
+
+Image: ./Dataset\s40\4.pgm
 Result: Wrong. The correct answer should be 40 while got  5
 
-Image: ./att_faces\s40\9.pgm
-Result: Wrong. The correct answer should be 40 while got 25
-
-Image: ./att_faces\s40\10.pgm
+Image: ./Dataset\s40\6.pgm
 Result: Correct
 
-Image: ./att_faces\s41\2.pgm
+Image: ./Dataset\s40\8.pgm
 Result: Correct
 
-Image: ./att_faces\s41\3.pgm
+Image: ./Dataset\s40\9.pgm
 Result: Correct
 
-Image: ./att_faces\s41\5.pgm
+Image: ./Dataset\s41\2.pgm
 Result: Correct
 
-Image: ./att_faces\s41\7.pgm
+Image: ./Dataset\s41\4.pgm
+Result: Correct
+
+Image: ./Dataset\s41\6.pgm
+Result: Correct
+
+Image: ./Dataset\s41\7.pgm
 Result: Wrong. The correct answer should be 41 while got 21
 
-Image: ./att_faces\s41\10.pgm
-Result: Correct
+Image: ./Dataset\s41\8.pgm
+Result: Wrong. The correct answer should be 41 while got 23
 
-Correct: 62.44
+Correct: 63.41
