@@ -8,7 +8,7 @@ Path="./Dataset"
 # [Function Usage] This function is used to test and plot the change in recognition accuracy as the number of PCs increases
 # [Parameter] None
 # [Return value] None
-# [Developer and date] Zhi DING 2020/12/28
+# [Developer and date] Anonymous
 # [Change Record] None
 if __name__ == '__main__':
     energyValues = range(0,101)

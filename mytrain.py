@@ -10,7 +10,7 @@ Path="./Dataset"
     # model: The name of the model to be loaded
     # path: The storage path of the image to be trained
 # [Return value] None
-# [Developer and date] Zhi DING 2020/12/28
+# [Developer and date] Anonymous
 # [Change Record] None
 def mytrain(energy,model,path):
     efaces = Eigenfaces(path,energy,model,True)

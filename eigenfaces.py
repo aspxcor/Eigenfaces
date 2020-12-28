@@ -9,9 +9,6 @@
     # 7. Reconstruction process: roughly as follows: myreconstruct input face image file name model file name and other parameters, after loading the model file, transform the input face image into eigenface space, and then use the transformed result to rebuild Construct back to the original face image. The demo program can display the results of reconstruction with 10 PCs, 25 PCs, 50 PCs, and 100 PCs at the same time, and realize the reconstruction of own images.
     # 8. The experimental report must include the following experimental results: a. Average face and at least the top 10 eigenfaces; b. 10 PCs, 25 PCs, 50 PCs, and 100 PCs reconstructed from your own face image Results; c. Half of the data of each person in the AT&T face database is trained, and the other half is tested, showing the change curve of Rank 1 recognition rate as the PC increases (that is, the abscissa is the number of PCs used, and the ordinate is Rank 1 a curve of rate)
 # File Name: Eigenfaces.py
-# Author: Zhi DING
-# Student ID: 3170104656
-# Last Modified: 2020/12/28
 
 import os
 import cv2
@@ -30,7 +27,7 @@ Save_Path = "./Output"     # Path to save picture which is after detected
     # classify(self, pathToImg,isShow=False):Classify an image to one of the eigenfaces.
     # reconstruct(self, pathToImg,numOfPC): Reconstruct the image by using the eigenfaces.
     # evaluate(self):Evaluate the model using the 50% test faces left from every different face in the AT&T set.
-# [Developer and date] Zhi DING 2020/12/28
+# [Developer and date] Anonymous
 # [Change Record] None
 class Eigenfaces(object):
     facesCount = 41        #40 faces from AT&T dataset and the last face is my face data
@@ -49,7 +46,7 @@ class Eigenfaces(object):
         # _model: Location of model output
         # isShow: Whether to show the top ten Eigenfaces
     # [Return value] None
-    # [Developer and date] Zhi DING 2020/12/28
+    # [Developer and date] Anonymous
     # [Change Record] None
     def __init__(self, _facesDir = '.', _energy = 0.8,_model='trainModel',isShow=False):
         print ('> Eigenfaces initializing ...')
@@ -116,7 +113,7 @@ class Eigenfaces(object):
     # [Function Usage] This function is used to Write data into the file
     # [Parameter] None
     # [Return value] None
-    # [Developer and date] Zhi DING 2020/12/28
+    # [Developer and date] Anonymous
     # [Change Record] None
     def write(self):
         fileOut=open(self.model,"wb")
@@ -131,7 +128,7 @@ class Eigenfaces(object):
     # [Return value]
         # matchID: Matched face ID
         # closestFaceID: The closest matching face dataset ID for training
-    # [Developer and date] Zhi DING 2020/12/28
+    # [Developer and date] Anonymous
     # [Change Record] None
     def classify(self, pathToImg,isShow=False):
         img = cv2.imread(pathToImg, 0)                                        # read as a grayscale image
@@ -163,7 +160,7 @@ class Eigenfaces(object):
         # pathToImg: The path of the face to be reconstructed
         # numOfPC: number of PCs to reconstruct the faces
     # [Return value] None
-    # [Developer and date] Zhi DING 2020/12/28
+    # [Developer and date] Anonymous
     # [Change Record] None
     def reconstruct(self, pathToImg,numOfPC):
         img = cv2.imread(pathToImg, 0)                                        # read as a grayscale image
@@ -180,7 +177,7 @@ class Eigenfaces(object):
     # [Function Usage] This function is used to Evaluate the model using the 50% test faces left from every different face in the AT&T set.
     # [Parameter] None
     # [Return value] None
-    # [Developer and date] Zhi DING 2020/12/28
+    # [Developer and date] Anonymous
     # [Change Record] None
     def evaluate(self):
         print ('> Evaluating Models started')
@@ -210,7 +207,7 @@ class Eigenfaces(object):
 # [Function Usage] This function is used to read In the Model
 # [Parameter] model:the model to be read in.
 # [Return value] modelIn: The Eigenfaces model.
-# [Developer and date] Zhi DING 2020/12/28
+# [Developer and date] Anonymous
 # [Change Record] None
 def readInModel(model):
     fileOut = open(model, "rb")

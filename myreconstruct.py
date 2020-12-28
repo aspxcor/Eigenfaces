@@ -11,7 +11,7 @@ Save_Path = "./Output"
     # model: The name of the model to be loaded
     # path: The storage path of the image to be reconstructed
 # [Return value] None
-# [Developer and date] Zhi DING 2020/12/28
+# [Developer and date] Anonymous
 # [Change Record] None
 def myreconstruct(face,model,path):
     efaces = readInModel(model)
